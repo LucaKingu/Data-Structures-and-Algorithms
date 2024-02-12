@@ -1,0 +1,62 @@
+#Python
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+
+#C++
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Build directories
+build/
+
+
+#Java
+# Compiled class files
+*.class
+
+# Byte code
+*.jar
+*.war
+*.ear
+
+# Maven build directory
+target/
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+*.iws
+*.ipr
+*.iws
+out/
+
