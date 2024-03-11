@@ -43,6 +43,7 @@ build/
 *.mdf
 *.ldf
 *.vsidx
+*.opendb
 
 #Java
 # Compiled class files
