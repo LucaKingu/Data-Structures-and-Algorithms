@@ -39,6 +39,10 @@ venv/
 # Build directories
 build/
 
+#mustIgnore
+*.mdf
+*.ldf
+
 
 #Java
 # Compiled class files
