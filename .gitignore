@@ -42,7 +42,7 @@ build/
 #mustIgnore
 *.mdf
 *.ldf
-
+*.vsidx
 
 #Java
 # Compiled class files
