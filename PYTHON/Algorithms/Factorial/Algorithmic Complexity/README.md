@@ -1,0 +1,1 @@
+It can be clearly seen that the Factorial Recurssion function contains a time complexity of Big O(n!). This makes it an extremely inefficient algorithm.

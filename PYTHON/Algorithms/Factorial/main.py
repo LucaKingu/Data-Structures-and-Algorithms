@@ -1,4 +1,4 @@
-
+import matplotlib.pyplot as plt
 def factorial(num):
     if num <= 1:
         return 1
@@ -6,10 +6,15 @@ def factorial(num):
         return num * factorial(num - 1)
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    num = 5
-    result = factorial(num)
-    print(result)
+    input_sizes = [5,10,15,20,25]
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    runtimes = [1,10,100,1000,10000]
+
+    plt.plot(input_sizes, runtimes, marker='o')
+    plt.xlabel('Input size')
+    plt.ylabel('Runtime(Seconds)')
+    plt.title('Factorial Time Complexity')
+    plt.grid(True)
+    plt.show()
+
