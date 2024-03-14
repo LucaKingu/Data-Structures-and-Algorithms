@@ -1,10 +1,9 @@
 import matplotlib.pyplot as plt
-def factorial(num):
+def factorial_recurssion(num):
     if num <= 1:
         return 1
     else:
-        return num * factorial(num - 1)
-
+        return num * factorial_recurssion(num - 1)
 
 if __name__ == '__main__':
     input_sizes = [5,10,15,20,25]
