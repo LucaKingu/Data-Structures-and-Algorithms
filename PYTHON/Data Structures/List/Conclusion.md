@@ -1,0 +1,5 @@
+Since arrays are fixed and limited, I had to include the "dynamic array" alternative for each programme. Python had only lists with no actual fixed arrays, Java had ArrayList and C++ had Vector which both acted as the "dynamic arrays" respectively. I would recommend always using these instead of normal arrays for the simple reason that the performance difference is highly negligible and it is much easier to use the aforementioned list(Unless it is a simple program).
+
+Each programme had their differences with the functionality of said wrappers, for example python had a simple function to pop which also returned the value.C++
+on the other hand could pop, but also needed to do an extra step by getting the value of the last element beforehand should you plan to use it. Java had no pop function,
+you would have to create this yourself if you wish to use a pop function. In conclusion all programmes had similar functions yet at the same time different, including the syntax. However these given wrappers are much more useful than your typical arrays.
