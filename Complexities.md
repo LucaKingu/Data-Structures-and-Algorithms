@@ -6,19 +6,19 @@ One thing to note is that the input values along side the runtimes should match 
 
 
 
-Recurssion:
-    Factorial:
-        Time: Big O(n!)
-        Space:Big O(n)
+    Recurssion:
+        Factorial:
+            Time: Big O(n!)
+            Space:Big O(n)
 
-    Fibonacci:
-        Time: Big O(n^2)
-        Space:Big O(n)
+        Fibonacci:
+            Time: Big O(n^2)
+            Space:Big O(n)
 
 
-Searching:
-    Linear:
-        Time: Big O(n)
-        Space:Big O(1)
+    Searching:
+        Linear:
+            Time: Big O(n)
+            Space:Big O(1)
     
-    Binary:
+        Binary:
