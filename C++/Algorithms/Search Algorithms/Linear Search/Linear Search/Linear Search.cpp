@@ -1,8 +1,6 @@
 #include <iostream>
-#include <vector>
 
 //The array size needs to be passed as a parameter aswell due to array decay.
-//It can also be done by passing the array as reference type(Done in Binary search)S
 int linearSearch(const int array[], int arraySize, int element)
 {
 
