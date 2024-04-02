@@ -22,3 +22,5 @@ One thing to note is that the input values along side the runtimes should match 
             Space:Big O(1)
     
         Binary:
+            Time: Big O(log(n))
+            Space:Big O(1)
