@@ -1,1 +1,3 @@
-Linear search can be sorted or unsorted
+Linear Search has a time complexity of Big O(n) which is a mid level algorithm. It can most definitely be useful with small to mid datasets, however with bigger data sets there are more efficient searching algorithms such as the Binary search.
+
+It contains a space complexity of Big O(1) since it requires the same constant amount of data regardless of the dataset size. This is the best in terms of efficiency when it comes to space complexity.
