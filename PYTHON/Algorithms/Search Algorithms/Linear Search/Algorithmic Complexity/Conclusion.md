@@ -1,0 +1,1 @@
+Linear search can be sorted or unsorted
