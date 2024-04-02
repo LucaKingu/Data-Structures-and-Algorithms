@@ -1,16 +1,30 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import matplotlib.pyplot as plt
 
 
-def LinearSearch(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def LinearSearch(array,element):
+    for i in range(len(array)):
+        if array[i] == element:
+            return i
+    return -1
 
 
-# Press the green button in the gutter to run the script.
+
+
 if __name__ == '__main__':
-    LinearSearch('PyCharm')
+    #sortedList = [1,3,5,7,9,11]
+    #element = 7
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    #result = LinearSearch(sortedList,element)
+    #print(result)
+
+    input_list = [5,10,15,20,25]
+
+    runtimes = [1,2,3,4,5]
+
+    plt.plot(input_list,runtimes,marker='o')
+    plt.xlabel('List numbers')
+    plt.ylabel('Runtime(seconds)')
+    plt.title('Linear Search Time Complexity')
+    plt.grid(True)
+    plt.show()
+
