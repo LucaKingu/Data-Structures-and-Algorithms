@@ -36,3 +36,6 @@ One thing to note is that the input values along side the runtimes should match 
             Quick:
                 Time: Big O(n log(n))
                 Space:Big O(log(n))
+            Select:
+                Time: Big O(n^2)
+                Space:Big O(1)
