@@ -11,7 +11,7 @@ public class Main {
         }
     }
 
-    public static void merge(int[] array, int[] leftHalf, int[] rightHalf)
+    private static void merge(int[] array, int[] leftHalf, int[] rightHalf)
     {
         int i = 0;
         int j = 0;
@@ -21,7 +21,6 @@ public class Main {
         {
             if(leftHalf[i] <= rightHalf[j])
             {
-                array[k] = leftHalf[i];
                 array[k] = leftHalf[i];
                 i++;
             }
@@ -56,22 +55,24 @@ public class Main {
             return;
         }
 
-        int minIndex = array.length / 2;
-        int[] leftHalf = new int[minIndex];
-        int[] rightHalf = new int[array.length - minIndex];
+        int midIndex = array.length / 2;
+        int[] leftHalf = new int[midIndex];
+        int[] rightHalf = new int[array.length - midIndex];
 
-        for(int i = 0; i < minIndex; i++)
+        for(int i = 0; i < midIndex; i++)
         {
             leftHalf[i] = array[i];
         }
 
-        for(int i = minIndex; i < array.length; i++)
+        for(int i = midIndex; i < array.length; i++)
         {
-            leftHalf[i - minIndex] =  array[i];
+            rightHalf[i - midIndex] =  array[i];
         }
 
         mergeSort(leftHalf);
         mergeSort(rightHalf);
+
+        merge(array, leftHalf, rightHalf);
     }
 
 }
