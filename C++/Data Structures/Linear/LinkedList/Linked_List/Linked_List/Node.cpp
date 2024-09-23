@@ -9,5 +9,8 @@ Node::Node(int value)
 
 Node::~Node()
 {
-	std::cout << "Node with data " << data << " deleted" << std::endl;
+	/* The destructor was originally designed to display output, but since it gets called
+	 when the object is destroyed, it results in displaying messages for nodes that 
+	 were not deleted properly. This can lead to confusion, so the display output has 
+	been removed.*/
 }

@@ -1,20 +1,96 @@
-// Linked_List.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include "Linked_List.h"
 
-int main()
+Linked_List::Linked_List()
 {
-    std::cout << "Hello World!\n";
+	head = nullptr;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+void Linked_List::insert(int data)
+{
+	Node* node = new Node(data);
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+	if(head == nullptr)
+	{
+		head = node;
+	}
+	else
+	{
+		Node* temp = head;
+		while (temp->next != nullptr)
+		{
+			temp = temp->next;
+		}
+		temp->next = node;
+	}
+}
+
+void Linked_List::deleteAt(int index)
+{
+	if (head == nullptr)
+	{
+		std::cout << "List is empty" << std::endl;
+		return;
+	}
+
+	if (index == 0)
+	{
+		Node* temp = head; 
+		head = head->next;
+		delete temp; 
+	}
+	else
+	{
+		Node* temp = head; 
+		for (int i = 0; i < index - 1; i++) {
+			if (temp->next == nullptr) {
+				std::cout << "Index out of bounds" << std::endl;
+				return;
+			}
+			temp = temp->next;
+		}
+
+		Node* nodeToDelete = temp->next; 
+		if (nodeToDelete != nullptr)
+		{ 
+			temp->next = nodeToDelete->next; 
+			delete nodeToDelete; 
+			std::cout << "Node deleted" << std::endl; 
+		}
+	}
+}
+
+
+void Linked_List::show()
+{
+	Node* temp = head;
+
+	if (temp == nullptr)
+	{
+		std::cout << "List is empty" << std::endl;
+	}
+	else
+	{
+		//In this case, this is the part where we do not skip the last node by
+		//NOT using -> operator. 
+		while (temp != nullptr)
+		{
+			std::cout << temp->data << " ";
+			temp = temp->next;
+		}
+		std::cout << std::endl;
+	}
+}
+
+//Since this is C++, We must delete the newly created objects in the destructor.
+//Go through each node one by one to delete
+Linked_List::~Linked_List()
+{
+	Node* current = head;
+	while (current != nullptr)
+	{
+		Node* temp = current;
+		current = current->next;
+		delete temp;
+	}
+}
